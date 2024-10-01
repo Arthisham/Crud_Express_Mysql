@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete User</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aqua;
+            padding: 50px;
+            text-align: center;
+        }
+        .container {
+            background-color: rgb(231, 216, 187);
+            height: 100%;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #8f2929;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        {{!-- .msg{
+            margin-top: 20%;
+        } --}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+         <div class="msg"></div>
+          {{#if msg}}
+            <div class="alert">{{msg}}</div>
+          {{/if}}
+        
+        
+        <p>The user has been deleted from the database.</p>
+        
+        <p>
+            <a href="/">Back to User List</a> 
+        </p>
+    </div>
+</body>
+</html>

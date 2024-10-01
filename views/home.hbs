@@ -1,0 +1,63 @@
+<h1>Crud Operation</h1>
+
+<h3>Student Management System</h3>
+
+<button class="addbutton"><a href="/adduser" class="addbtn">Add User</a></button>
+
+<table>
+   <thead>
+      <th>#</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+      <th>Edit</th>
+      <th>Delete</th>
+   </thead>
+   <tbody>
+      {{#each rows}}
+      <tr>
+         <td>{{this.id}}</td>
+         <td>{{this.name}}</td>
+         <td>{{this.age}}</td>
+         <td>{{this.city}}</td>
+         <td><a href="/edituser/{{this.id}}" class="edit">Edit</a></td>
+         <td><a onclick="return confirm("Are you sure")" href="/deleteuser/{{this.id}}" class="delete">Delete</a></td>
+      </tr>
+      {{/each}}
+   </tbody>
+   {{!-- <tr>
+      <td>1</td>
+      <td>Arthi</td>
+      <td>21</td>
+      <td>Cuddalore</td>
+      <td><a href="" class="edit">Edit</a></td>
+      <td><a href="" class="delete">Delete</a></td>
+   </tr>
+    <tr>
+      <td>1</td>
+      <td>Arthi</td>
+      <td>21</td>
+      <td>Cuddalore</td>
+      <td><a href="" class="edit">Edit</a></td>
+      <td><a href="" class="delete">Delete</a></td>
+   </tr>
+
+   <tr>
+      <td>1</td>
+      <td>Arthi</td>
+      <td>21</td>
+      <td>Cuddalore</td>
+      <td><a href="" class="edit">Edit</a></td>
+      <td><a href="" class="delete">Delete</a></td>
+   </tr>
+
+   <tr>
+      <td>1</td>
+      <td>Arthi</td>
+      <td>21</td>
+      <td>Cuddalore</td>
+      <td><a href="" class="edit">Edit</a></td>
+      <td><a href="" class="delete">Delete</a></td>
+   </tr> --}}
+   
+</table>
